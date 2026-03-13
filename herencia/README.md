@@ -1,6 +1,6 @@
 # Proyecto de Herencia - Cuentas Bancarias
 
-Este proyecto demuestra el concepto de herencia en Java mediante la implementación de un sistema de cuentas bancarias.
+![alt text](image.png)
 
 ## Diagrama de Clases
 
@@ -48,18 +48,16 @@ classDiagram
 
 ## Descripción
 
-- **Cuenta**: Clase base que maneja saldo, consignaciones, retiros, tasa anual y comisión mensual.
-- **CuentaAhorros**: Hereda de Cuenta. Se activa con saldo >= 10000. Cobra comisión por retiros extras.
-- **CuentaCorriente**: Hereda de Cuenta. Permite sobregiro y maneja consignaciones para cubrirlo.
+Este proyecto implementa un sistema de cuentas bancarias utilizando herencia en Java. La clase base `Cuenta` proporciona la funcionalidad común, mientras que `CuentaAhorros` y `CuentaCorriente` extienden esta clase con comportamientos específicos.
 
-## Cómo ejecutar
+### Características Principales
 
-```bash
-mvn compile
-mvn exec:java
-```
+- **Cuenta de Ahorros**: Se activa con saldo mínimo de $10,000. Cobra comisión por retiros adicionales.
+- **Cuenta Corriente**: Permite sobregiro y maneja consignaciones para cubrirlo primero.
 
-## Requisitos
+## Cómo Ejecutar
 
-- Java 17
-- Maven
+1. Asegúrate de tener Maven instalado.
+2. Navega al directorio del proyecto.
+3. Ejecuta `mvn compile` para compilar.
+4. Ejecuta `mvn exec:java` para correr el programa.
